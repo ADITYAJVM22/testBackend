@@ -11,12 +11,15 @@ app.get('/twitter',(req,res)=>{
 })
 // if we write any new function we have to restart the server so to fix this certain packages are there
 app.get('/login',(req,res)=>{
-    res.send('<h1>Login krle bsdk</h1>')
+    res.send('<h1>Login krle</h1>')
 })
-qpp.get('/youtube',(req,res)=>{
-  res.send('<h1>Login krle bsdk</h1>')
+app.get('/youtube',(req,res)=>{
+  res.send('<h1>Login krle</h1>')
 })
 
+app.get('/google',(req,res)=>{
+  res.send('<h1>Login krle</h1>')
+})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
